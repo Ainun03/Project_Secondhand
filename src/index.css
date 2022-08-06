@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+select:invalid { color: gray; }
+.ant-radio-checked .ant-radio-inner{
+  border-color: #7126B5 !important ;
+}
+.ant-radio-checked  .ant-radio-inner:after{
+  background-color: #7126B5;
+}
+button.ant-btn.ant-btn-primary.mt-4.w-full[disabled], button.ant-btn.ant-btn-primary.mt-4.w-full[disabled]:hover, button.ant-btn.ant-btn-primary.mt-4.w-full[disabled]:focus, button.ant-btn.ant-btn-primary.mt-4.w-full[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+button.ant-btn.ant-btn-primary.mt-4.w-full {
+  color: #fff;
+  border-color: #7126B5 ;
+  background: #7126B5 ;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
